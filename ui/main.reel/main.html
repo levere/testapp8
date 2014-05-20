@@ -22,6 +22,12 @@
             "bindings": {
                 "value": {"<-": "@user.isLoggedIn"}
             }
+        },
+        "user": {
+            "prototype": "ui/user.reel",
+            "properties": {
+                "element": {"#": "user"}
+            }
         }
     }
     </script>
@@ -29,6 +35,7 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <input type="checkbox" data-montage-id="checkbox">
+        <div data-montage-id="user"></div>
     </div>
 </body>
 </html>
