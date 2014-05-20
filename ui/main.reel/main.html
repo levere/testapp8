@@ -25,6 +25,16 @@
                 "checked": {"<-": "@user.isLoggedIn"}
             }
         },
+        "text": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@user.isLoggedIn"}
+            }
+        },
         "user": {
             "prototype": "ui/user.reel",
             "properties": {
@@ -38,6 +48,7 @@
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <input type="checkbox" data-montage-id="checkbox">
         <div data-montage-id="user"></div>
+        <p data-montage-id="text"></p>
     </div>
 </body>
 </html>
