@@ -13,6 +13,6 @@ exports.User = Montage.specialize(/** @lends User# */ {
             this.super();
         }
         
-        isLoggedIn = false;
+        isLoggedIn = true;
     }
 });
