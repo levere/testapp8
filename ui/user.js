@@ -12,5 +12,7 @@ exports.User = Montage.specialize(/** @lends User# */ {
         value: function User() {
             this.super();
         }
+        
+        isLoggedIn = false;
     }
 });
