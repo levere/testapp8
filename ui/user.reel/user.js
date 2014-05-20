@@ -13,5 +13,7 @@ exports.User = Component.specialize(/** @lends User# */ {
         value: function User() {
             this.super();
         }
+        
+        isLoggedIn = false;
     }
 });
