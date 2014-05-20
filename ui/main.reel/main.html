@@ -13,6 +13,14 @@
                 "element": {"#": "main"}
             }
         },
+        "button": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "isLoggedIn"
+            }
+        },
         "checkbox": {
             "prototype": "digit/ui/checkbox.reel",
             "properties": {
@@ -23,16 +31,6 @@
             },
             "bindings": {
                 "checked": {"<-": "@user.isLoggedIn"}
-            }
-        },
-        "text": {
-            "prototype": "montage/ui/text.reel",
-            "properties": {
-                "element": {"#": "text"},
-                "value": "Text"
-            },
-            "bindings": {
-                "value": {"<-": "@user.isLoggedIn"}
             }
         },
         "user": {
@@ -48,7 +46,7 @@
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <input type="checkbox" data-montage-id="checkbox">
         <div data-montage-id="user"></div>
-        <p data-montage-id="text"></p>
+        <button data-montage-id="button"></button>
     </div>
 </body>
 </html>
