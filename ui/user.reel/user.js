@@ -15,6 +15,6 @@ exports.User = Component.specialize(/** @lends User# */ {
         }
     },
     isLoggedIn: {
-        value: false
+        value: true
     }
 });
