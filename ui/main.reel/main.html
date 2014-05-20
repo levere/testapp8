@@ -17,10 +17,11 @@
             "prototype": "digit/ui/checkbox.reel",
             "properties": {
                 "element": {"#": "checkbox"},
-                "checked": true
+                "checked": true,
+                "value": "isLoggedIn"
             },
             "bindings": {
-                "value": {"<-": "@user.isLoggedIn"}
+                "enabled": {"<-": "@user.isLoggedIn"}
             }
         },
         "user": {
