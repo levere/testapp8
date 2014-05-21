@@ -4,6 +4,10 @@
  */
 var Component = require("montage/ui/component").Component;
 
+user = function()
+{
+}
+
 /**
  * @class VwfPortalModel
  * @extends Component
@@ -14,7 +18,7 @@ exports.VwfPortalModel = Component.specialize(/** @lends VwfPortalModel# */ {
             this.super();
 
             user: {
-                value: { {isLoggedIn: { value: false }} }
+                value: new { {isLoggedIn: { value: false }} }
             }
         }
     }
