@@ -12,10 +12,6 @@ exports.User = Component.specialize(/** @lends User# */ {
     constructor: {
         value: function User() {
             this.super();
-            
-            this.defineBinding('isCompleted', {
-                '<-': 'todo.completed'
-            });
         }
     },
     
