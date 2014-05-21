@@ -14,7 +14,8 @@ exports.VwfPortalModel = Component.specialize(/** @lends VwfPortalModel# */ {
             this.super();
 
             user: {
-                isLoggedIn: {
+                value: false
+                /*isLoggedIn: {
                     value: false
                 },
                 isAdmin: {
@@ -22,7 +23,7 @@ exports.VwfPortalModel = Component.specialize(/** @lends VwfPortalModel# */ {
                 },
                 username: {
                     value: 'Guest'
-                }
+                }*/
             }
         }
     }
