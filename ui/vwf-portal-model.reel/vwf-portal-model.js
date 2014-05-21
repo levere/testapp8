@@ -12,6 +12,12 @@ exports.VwfPortalModel = Component.specialize(/** @lends VwfPortalModel# */ {
     constructor: {
         value: function VwfPortalModel() {
             this.super();
+
+            user: {
+                isLoggedIn: false,
+                isAdmin: false,
+                username: 'Guest'
+            }
         }
     }
 });
