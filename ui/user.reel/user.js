@@ -22,7 +22,7 @@ exports.User = Component.specialize(/** @lends User# */ {
     },
     
     _checked: {
-        value: false
+        value: true
     },
 
     /**
