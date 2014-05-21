@@ -39,6 +39,18 @@ exports.User = Component.specialize(/** @lends User# */ {
         get: function() {
             return this._isAdmin;
         }
-    }
+    },
+    
+    _isAdmin: {
+        value: false
+    },
 
+    isAdmin: {
+        set: function(value) {
+            this._isAdmin = value;
+        },
+        get: function() {
+            return this._isAdmin;
+        }
+    }
 });
