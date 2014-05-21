@@ -21,7 +21,7 @@
                 "label": "isLoggedIn"
             },
             "bindings": {
-                "enabled": {"<-": "@user.checked"}
+                "enabled": {"<-": "@user.isLoggedIn"}
             }
         },
         "checkbox": {
@@ -33,7 +33,7 @@
                 "value": "test component"
             },
             "bindings": {
-                "checked": {"<->": "@user.checked"}
+                "checked": {"<->": "@user.isLoggedIn"}
             }
         },
         "user": {
