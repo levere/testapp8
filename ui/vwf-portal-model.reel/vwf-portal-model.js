@@ -14,7 +14,7 @@ exports.VwfPortalModel = Component.specialize(/** @lends VwfPortalModel# */ {
             this.super();
 
             user: {
-                value: { isLoggedIn: {value: true} }
+                value: false//{ isLoggedIn: {value: true} }
                 /*,
                 isAdmin: {
                     value: false
