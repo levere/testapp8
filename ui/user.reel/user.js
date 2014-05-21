@@ -21,7 +21,7 @@ exports.User = Component.specialize(/** @lends User# */ {
         }
     },
     
-    _checked: {
+    _isLoggedIn: {
         value: false
     },
 
@@ -30,12 +30,12 @@ exports.User = Component.specialize(/** @lends User# */ {
      * @type {boolean}
      * @default false
      */
-    checked: {
+    isLoggedIn: {
         set: function(value) {
-            this._checked = value;
+            this._isLoggedIn = value;
         },
         get: function() {
-            return this._checked;
+            return this._isLoggedIn;
         }
     }
 });
