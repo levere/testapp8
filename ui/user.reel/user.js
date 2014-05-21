@@ -32,5 +32,19 @@ exports.User = Component.specialize(/** @lends User# */ {
         get: function() {
             return this._isLoggedIn;
         }
+    },
+    
+    _isLoggedIn: {
+        value: false
+    },
+
+    isLoggedIn: {
+        set: function(value) {
+            this._isLoggedIn = value;
+        },
+        get: function() {
+            return this._isLoggedIn;
+        }
     }
+
 });
