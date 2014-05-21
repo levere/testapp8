@@ -4,11 +4,6 @@
  */
 var Component = require("montage/ui/component").Component;
 
-user = function()
-{
-    this.isLoggedIn = true;
-}
-
 /**
  * @class VwfPortalModel
  * @extends Component
