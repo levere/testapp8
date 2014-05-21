@@ -21,7 +21,7 @@
                 "label": "isLoggedIn"
             },
             "bindings": {
-                "enabled": {"<-": "@user.isLoggedIn"}
+                "enabled": {"<-": "@user.isCompleted"}
             }
         },
         "checkbox": {
@@ -33,16 +33,13 @@
                 "value": "test component"
             },
             "bindings": {
-                "checked": {"<->": "@user.isLoggedIn"}
+                "checked": {"<->": "@user.isCompleted"}
             }
         },
         "user": {
             "prototype": "ui/user.reel",
             "properties": {
                 "element": {"#": "user"}
-            },
-            "bindings": {
-                "isLoggedIn": {"<->": "@checkbox.checked"}
             }
         }
     }
