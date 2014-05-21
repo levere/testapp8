@@ -25,11 +25,6 @@ exports.User = Component.specialize(/** @lends User# */ {
         value: false
     },
 
-    /**
-     * This property reflect the checked state of the checkbox.
-     * @type {boolean}
-     * @default false
-     */
     isLoggedIn: {
         set: function(value) {
             this._isLoggedIn = value;
