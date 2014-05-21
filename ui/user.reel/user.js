@@ -41,16 +41,16 @@ exports.User = Component.specialize(/** @lends User# */ {
         }
     },
     
-    _isAdmin: {
+    _username: {
         value: false
     },
 
-    isAdmin: {
+    username: {
         set: function(value) {
-            this._isAdmin = value;
+            this._username = value;
         },
         get: function() {
-            return this._isAdmin;
+            return this._username;
         }
     }
 });
