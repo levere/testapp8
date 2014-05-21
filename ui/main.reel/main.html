@@ -21,7 +21,7 @@
                 "label": "isLoggedIn"
             },
             "bindings": {
-                "enabled": {"<-": "@user.isLoggedIn"}
+                "enabled": {"<-": "@vwfPortalModel.user.isLoggedIn"}
             }
         },
         "checkbox": {
@@ -33,13 +33,13 @@
                 "value": "test component"
             },
             "bindings": {
-                "checked": {"<->": "@user.isLoggedIn"}
+                "checked": {"<->": "@vwfPortalModel.user.isLoggedIn"}
             }
         },
-        "user": {
-            "prototype": "ui/user.reel",
+        "vwfPortalModel": {
+            "prototype": "ui/vwf-portal-model.reel",
             "properties": {
-                "element": {"#": "user"}
+                "element": {"#": "vwfPortalModel"}
             }
         }
     }
@@ -48,8 +48,8 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <input type="checkbox" data-montage-id="checkbox">
-        <div data-montage-id="user"></div>
         <button data-montage-id="button"></button>
+        <div data-montage-id="vwfPortalModel"></div>
     </div>
 </body>
 </html>
