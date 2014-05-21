@@ -6,6 +6,7 @@ var Component = require("montage/ui/component").Component;
 
 user = function()
 {
+    this.isLoggedIn = false;
 }
 
 /**
