@@ -14,7 +14,7 @@ exports.VwfPortalModel = Component.specialize(/** @lends VwfPortalModel# */ {
             this.super();
 
             user: {
-                "prototype": "user.reel"
+                "prototype": "ui/user.reel"
             }
         }
     }
