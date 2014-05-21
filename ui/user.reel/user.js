@@ -15,27 +15,21 @@ exports.User = Component.specialize(/** @lends User# */ {
         }
     },
     
-    _isCompleted: {
+    _checked: {
         value: false
     },
 
-    isCompleted: {
-        get: function () {
-            return this._isCompleted;
+    /**
+     * This property reflect the checked state of the checkbox.
+     * @type {boolean}
+     * @default false
+     */
+    checked: {
+        set: function(value) {
+            this._checked = value;
         },
-        set: function (value) {
-            if (value === this._isCompleted) {
-                return;
-            }
-
-            /*if (value) {
-                this.classList.add('completed');
-            } else {
-                this.classList.remove('completed');
-            }*/
-
-            this._isCompleted = value;
-            this.needsDraw = true;
+        get: function() {
+            return this._checked;
         }
     }
 });
