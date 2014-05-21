@@ -12,12 +12,6 @@ exports.User = Component.specialize(/** @lends User# */ {
     constructor: {
         value: function User() {
             this.super();
-            /*this.defineBindings({
-                // classList management
-                "classList.has('montage-Checkbox--checked')": {
-                    "<-": "checked"
-                }
-            });*/
         }
     },
     
