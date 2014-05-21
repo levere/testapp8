@@ -34,16 +34,16 @@ exports.User = Component.specialize(/** @lends User# */ {
         }
     },
     
-    _isLoggedIn: {
+    _isAdmin: {
         value: false
     },
 
-    isLoggedIn: {
+    isAdmin: {
         set: function(value) {
-            this._isLoggedIn = value;
+            this._isAdmin = value;
         },
         get: function() {
-            return this._isLoggedIn;
+            return this._isAdmin;
         }
     }
 
